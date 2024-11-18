@@ -12,7 +12,7 @@ const ProgressBarComponent = ({ completed }) => {
         baseBgColor="#e0e0e0"
         height="12px"
         isLabelVisible={false}
-        borderRadius="5px"
+        borderRadius="4px"
       />
 
       {/* Render circles at milestone positions */}
