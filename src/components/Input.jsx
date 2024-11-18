@@ -3,6 +3,7 @@ import React from 'react';
 const Input = ({ placeholder, type = 'text', value, onChange, className }) => {
     return (
         <input
+            required
             type={type}
             placeholder={placeholder}  // Placeholder prop
             value={value}
