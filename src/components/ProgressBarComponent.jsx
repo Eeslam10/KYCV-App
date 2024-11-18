@@ -15,7 +15,7 @@ const ProgressBarComponent = ({ completed }) => {
         borderRadius="4px"
       />
 
-      {/* Render circles at milestone positions */}
+     
       {milestones.map((milestone, index) => (
         <div
           key={index}
