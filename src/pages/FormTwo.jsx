@@ -4,6 +4,7 @@ import Button from '../components/Button'
 import Input from '../components/Input';
 import { useNavigate } from 'react-router-dom';
 import ProgressBar from '../components/ProgressBarComponent';
+import Dropdown from '../components/dropdownComponent';
 
 const FormTwo = () => {
 
@@ -24,12 +25,15 @@ const FormTwo = () => {
       </div>
 
       <form action="" className='mt-10 '>
-        <div className='flex flex-col gap-8 mx-6 justify-cente'>
-          <Input placeholder="Date of birth" />
-          <Input placeholder="Programe" />
-          <Input placeholder="Bank name" />
-          <Input placeholder="Account number" type="number"/>
-          <Button onClick={handleClick}>Continue</Button>
+        <div className='flex flex-col gap-8 mx-6 justify-center relative'>
+          <Input placeholder="LGA" />
+          <Input placeholder="Marital Status" />
+          <Input placeholder="Next of Kin" />
+          <Input placeholder="Next of Kin Address"/>
+          <Dropdown/>
+          <div className='flex mt-8'>
+            <Button className='w-32 absolute right-0' onClick={handleClick}>Next</Button>
+          </div>
         </div>
       </form>
     </>

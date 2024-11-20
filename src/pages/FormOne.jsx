@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from "../assets/Logo.svg";
 import Button from '../components/Button';
 import Input from '../components/Input';
+import Dropdown from '../components/dropdownComponent';
 import { useNavigate } from 'react-router-dom';
 import ProgressBar from '../components/ProgressBarComponent';
 
@@ -25,12 +26,16 @@ const FormOne = () => {
 
 
             <form action="" className='mt-10 '>
-                <div className='flex flex-col gap-8 mx-6 justify-cente'>
-                    <Input placeholder="Enter your full name" />
-                    <Input placeholder="Enter your student ID" type="number" />
-                    <Input placeholder="Enter your age" type="number" />
-                    <Input placeholder="Enter your gender" />
-                    <Button onClick={handleClick}>Continue</Button>
+                <div className='flex flex-col gap-8 mx-6 justify-center relative'>
+                    <Input placeholder="Full Name" />
+                    <Input placeholder="Date of birth" type="date" />
+                    <Dropdown ></Dropdown>
+                    {/* <Input placeholder="Gender" /> */}
+                    <Input placeholder="Address" />
+                    <Input placeholder="NIN" type='number' />
+                    <div className='flex mt-8'>
+                    <Button className='w-32 absolute right-0' onClick={handleClick}>Next</Button>
+                    </div>
                 </div>
             </form>
         </>

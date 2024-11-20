@@ -2,7 +2,7 @@ import React from 'react';
 import ProgressBar from '@ramonak/react-progress-bar';
 
 const ProgressBarComponent = ({ completed }) => {
-  const milestones = [0, 50, 100];
+  const milestones = [0, 31, 67, 100];
 
   return (
     <div style={{ position: 'relative', width: '100%' }}>
