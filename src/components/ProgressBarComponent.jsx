@@ -10,7 +10,7 @@ const ProgressBarComponent = ({ completed }) => {
         completed={completed} 
         bgColor="#098717"
         baseBgColor="#e0e0e0"
-        height="12px"
+        height="5px"
         isLabelVisible={false}
         borderRadius="4px"
       />
@@ -24,11 +24,11 @@ const ProgressBarComponent = ({ completed }) => {
             top: '50%',
             left: `${milestone}%`,
             transform: 'translate(-50%, -50%)',
-            width: '25px',
-            height: '25px',
+            width: '15px',
+            height: '15px',
             borderRadius: '50%',
             backgroundColor: milestone <= completed ? '#098717' : '#e0e0e0',
-            border: 'none',  // Optional: adds a border for contrast
+            border: 'none',  
             zIndex: 1,
           }}
         ></div>

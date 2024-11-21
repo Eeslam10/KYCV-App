@@ -7,15 +7,15 @@ import VerifiedModal from '../components/VerifiedModal';
 
 const Verification = () => {
   const [error, setError] = useState(false);
-  const [isVerified, setIsVerified] = useState(false); // State for modal visibility
-  const [codeCorrect, setCodeCorrect] = useState(false); // State for code correctness
-  const correctCode = "1234"; // Default correct code
-  const navigate = useNavigate(); // React Router's navigation hook
+  const [isVerified, setIsVerified] = useState(false); 
+  const [codeCorrect, setCodeCorrect] = useState(false); 
+  const correctCode = "1234";
+  const navigate = useNavigate(); 
 
   const handleComplete = (value) => {
     if (value === correctCode) {
       setError(false);
-      setCodeCorrect(true); // Set code as correct
+      setCodeCorrect(true); 
     } else {
       setError(true);
       setCodeCorrect(false);
@@ -24,9 +24,9 @@ const Verification = () => {
 
   const handleConfirmClick = () => {
     if (codeCorrect) {
-      setIsVerified(true); // Show the modal if the code is correct
+      setIsVerified(true); 
     } else {
-      setError(true); // Show error message if code is incorrect
+      setError(true); 
     }
   };
 
@@ -34,11 +34,11 @@ const Verification = () => {
     let timer;
     if (isVerified) {
       timer = setTimeout(() => {
-        setIsVerified(false); // Hide the modal
-        navigate('/formOne'); // Navigate to form1 after the modal disappears
-      }, 1000); // 1-second delay before closing the modal and navigating
+        setIsVerified(false); 
+        navigate('/formOne'); 
+      }, 1000); 
     }
-    return () => clearTimeout(timer); // Clean up the timeout
+    return () => clearTimeout(timer); 
   }, [isVerified, navigate]);
 
   return (
@@ -65,7 +65,7 @@ const Verification = () => {
               gap: '15px'
             }}
             inputFocusStyle={{ borderColor: 'blue' }}
-            onComplete={handleComplete} // Validate the code only on completion
+            onComplete={handleComplete} 
             autoSelect={true}
           />
         </div>

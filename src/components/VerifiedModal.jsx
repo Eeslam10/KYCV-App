@@ -1,4 +1,3 @@
-// VerifiedModal.js
 import React from 'react';
 import Verified from "../assets/verified.svg";
 

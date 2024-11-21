@@ -5,6 +5,8 @@ import Verification from './pages/Verification';
 import FormOne from './pages/FormOne';
 import FormTwo from './pages/FormTwo';
 import FormThree from './pages/FormThree';
+import FormFour from './pages/FormFour';
+import Home from './pages/Home';
 
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
         <Route path='/formOne' element={<FormOne />} />
         <Route path='/formTwo' element={<FormTwo />} />
         <Route path='/formThree' element={<FormThree />} />
+        <Route path='/formFour' element={<FormFour />} />
+        <Route path='/home' element={<Home />} />
       </Routes>
       </div>
     </>
