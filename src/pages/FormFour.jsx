@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import React from 'react';
 import Logo from "../assets/Logo.svg";
 import Button from '../components/Button';
 // import Input from '../components/Input';
@@ -11,11 +10,11 @@ import ProgressBar from '../components/ProgressBarComponent';
 
 const FormOne = () => {
    
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const handleClick = () => {
-    //     navigate('/');
-    // };
+    const handleClick = () => {
+        navigate('/home');
+    };
 
     // const initialValues = {
     //     bank: '',
@@ -92,7 +91,7 @@ const FormOne = () => {
                         </div>
                         
                         <div className='flex '>
-                            <Button className='w-32 absolute right-0 mr-6' >Next</Button>
+                            <Button className='w-32 absolute right-0 mr-6' onClick={handleClick}>Next</Button>
                         </div>
                     </form>
                

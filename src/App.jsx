@@ -7,6 +7,9 @@ import FormTwo from './pages/FormTwo';
 import FormThree from './pages/FormThree';
 import FormFour from './pages/FormFour';
 import Home from './pages/Home';
+import Profile from './pages/profile';
+import Education from './pages/Education';
+import Settings from './pages/Settings';
 
 
 const App = () => {
@@ -22,6 +25,9 @@ const App = () => {
         <Route path='/formThree' element={<FormThree />} />
         <Route path='/formFour' element={<FormFour />} />
         <Route path='/home' element={<Home />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/education' element={<Education />} />
+        <Route path='/settings' element={<Settings />} />
       </Routes>
       </div>
     </>
