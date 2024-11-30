@@ -15,6 +15,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
+    const navigateHome = useNavigate();
+    const handleClickHome = () => {
+        navigate('/home')
+    }
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/profile')
@@ -27,6 +31,10 @@ const Home = () => {
     const navigateSettings = useNavigate();
     const handleClickSettings = () => {
         navigateSettings('/settings')
+    }
+    const navigateLogout = useNavigate();
+    const handleClickLogout = () => {
+        navigateSettings('/')
     }
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -63,9 +71,6 @@ const Home = () => {
         setIsModalOpen(false);
     };
 
-
-
-
     return (
         <div className="relative">
             <header className="flex justify-between p-4">
@@ -86,7 +91,7 @@ const Home = () => {
                 onTouchMove={handleTouchMove}
             >
                 <div className="text-brand flex flex-col mt-16 p-2 relative">
-                    <div className="p-4 flex gap-2 items-center rounded-md hover:shadow-lg hover:bg-gray-100 transition-all">
+                    <div className="p-4 flex gap-2 items-center rounded-md hover:shadow-lg hover:bg-gray-100 transition-all " onClick={handleClickHome}>
                         <div className="p-2 rounded-full">
                             <img src={HomeLogo} />
                         </div>
@@ -114,7 +119,7 @@ const Home = () => {
                         <p className="text-brand font-semibold">Settings</p>
                     </div>
                     <div className='rounded mt-[250px] flex justify-end p-8 w-[400px]'>
-                        <button className='text-white bg-brand p-4 rounded'>Logout</button>
+                        <button className='text-white bg-brand p-4 rounded' onClick={handleClickLogout}>Logout</button>
                     </div>
                 </div>
 

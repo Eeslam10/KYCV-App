@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import Profile from './pages/profile';
 import Education from './pages/Education';
 import Settings from './pages/Settings';
+import PersonalDetails from './pages/PersonalDetails';
+import CourseRegForm from './pages/CourseRegForm';
 
 
 const App = () => {
@@ -28,6 +30,8 @@ const App = () => {
         <Route path='/profile' element={<Profile />} />
         <Route path='/education' element={<Education />} />
         <Route path='/settings' element={<Settings />} />
+        <Route path='/personalDetails' element={<PersonalDetails />} />
+        <Route path='/courseRegForm' element={<CourseRegForm />} />
       </Routes>
       </div>
     </>

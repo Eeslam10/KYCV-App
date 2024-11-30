@@ -49,7 +49,7 @@ const FormOne = () => {
             </div>
 
             <div className="mt-10 mx-6">
-                <ProgressBar completed={31} />
+                <ProgressBar completed={67} />
             </div>
 
             <div>
