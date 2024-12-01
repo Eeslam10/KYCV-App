@@ -56,6 +56,7 @@ const FormFour = () => {
                                 Blood Group
                             </option>
                             <option value="AA">AA</option>
+                            <option value="AA">A-Positive</option>
                             <option value="O-Positive">O-Positive</option>
                             <option value="O-Negative">O-Negative</option>
                         </select>
