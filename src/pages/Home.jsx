@@ -179,14 +179,14 @@ const Home = () => {
                         <WeekModal isOpen={isModalOpen} closeModal={closeModal} />
                     </div>
                 {/* </section> */}
-                <footer className="shadow-lg mt-10 flex flex-col gap-8 ">
+                {/* <footer className="shadow-lg mt-10 flex flex-col gap-8 ">
                     <p className="text-brand font-semibold text-xl mt-4">Weekly Ranking</p>
                     <div>
                         <StackedBarChart />
                         <p>islam</p>
                     </div>
                     <p className="text-brand font-semibold text-xl">Tailoring</p>
-                </footer>
+                </footer> */}
             </div>
         </div>
     );
