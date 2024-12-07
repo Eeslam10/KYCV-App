@@ -114,7 +114,6 @@ const FormPage = () => {
             <option value="Mechanic">Mechanic</option>
             <option value="Welding">Welding</option>
             <option value="Carpentry">Carpentry</option>
-            <option value="Welding">Welding</option>
           </select>
         </div>
 
