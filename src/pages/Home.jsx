@@ -32,6 +32,11 @@ const Home = () => {
     const handleClickSettings = () => {
         navigateSettings('/settings')
     }
+
+    const navigateNotification = useNavigate();
+    const handleClickNotification = () => {
+        navigateNotification('/notification')
+    }
     const navigateLogout = useNavigate();
     const handleClickLogout = () => {
         navigateSettings('/')
@@ -81,7 +86,11 @@ const Home = () => {
                     onClick={toggleSidebar}
                     className="cursor-pointer"
                 />
-                <img src={Notification} alt="Notification" />
+                <img src={Notification}
+                 alt="Notification"
+                 onClick={handleClickNotification}
+                 className='cursor-pointer'
+                 />
             </header>
 
             <aside

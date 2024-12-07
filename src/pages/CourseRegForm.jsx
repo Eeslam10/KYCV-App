@@ -5,11 +5,14 @@ import { useNavigate } from 'react-router-dom';
 const FormPage = () => {
 
   const navigate = useNavigate();
-
   const handleGoBack = () => {
     navigate(-1);
   };
-  // const navigate = useNavigate();
+
+  const navigateReview = useNavigate();
+  const handleGoReview = () => {
+    navigateReview('/applicationReview')
+  }
 
   const [formValues, setFormValues] = useState({
     fullName: '',
@@ -43,7 +46,6 @@ const FormPage = () => {
   };
 
   return (
-
     <div className='p-4'>
       <div className=''>
         <button onClick={handleGoBack}>
@@ -96,13 +98,11 @@ const FormPage = () => {
             <option value="Other">Other</option>
           </select>
         </div>
-      
-
 
         <div className="flex flex-col gap-1">
           <select
-            id="gender"
-            name="gender"
+            id="desiredProgram"
+            name="desiredProgram"
             value={formValues.desiredProgram}
             onChange={handleChange}
             className="p-4 rounded w-full text-brand border-none bg-slate-100 placeholder:text-brand shadow"
@@ -110,11 +110,11 @@ const FormPage = () => {
             <option value="" disabled>
               Desired Program
             </option>
-            <option value="Male">Tailoring</option>
-            <option value="Female">Mechanic</option>
-            <option value="Other">Welding</option>
-            <option value="Other">Carpentry</option>
-            <option value="Other">Welding</option>
+            <option value="tailoring">Tailoring</option>
+            <option value="Mechanic">Mechanic</option>
+            <option value="Welding">Welding</option>
+            <option value="Carpentry">Carpentry</option>
+            <option value="Welding">Welding</option>
           </select>
         </div>
 
@@ -135,6 +135,7 @@ const FormPage = () => {
 
         <div className="flex items-end justify-end">
           <button
+            onClick={handleGoReview}
             type="submit"
             disabled={!isFormValid()}
             className={`${!isFormValid() ? 'bg-gray-300' : 'bg-brand'
