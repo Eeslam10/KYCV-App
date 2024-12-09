@@ -158,8 +158,8 @@ const Home = () => {
                     </div>
                 {/* </section> */}
 
-                <main className="flex mt-4 gap-1">
-                    <section className="shadow-lg w-1/2 p-2">
+                <main className="flex flex-col mt-4 gap-1">
+                    <section className="shadow-lg w-full p-2">
                         <div>
                             <p className="text-sm text-center text-brand">This Week's Performance</p>
                         </div>
@@ -168,12 +168,12 @@ const Home = () => {
                         </div>
                     </section>
 
-                    <section className="shadow-lg w-1/2 p-2 h-[270px]">
+                    <section className="shadow-lg w-full p-2 h-[270px]">
                         <div>
                             <p className="text-sm text-center text-brand">To Do List Check</p>
-                        </div>
                         <div className="mt-4">
                             <GreenBarChart />
+                        </div>
                         </div>
                     </section>
                 </main>
@@ -186,16 +186,7 @@ const Home = () => {
                             <p className="text-3xl text-brand">Activities of the Week</p>
                         </section>
                         <WeekModal isOpen={isModalOpen} closeModal={closeModal} />
-                    </div>
-                {/* </section> */}
-                {/* <footer className="shadow-lg mt-10 flex flex-col gap-8 ">
-                    <p className="text-brand font-semibold text-xl mt-4">Weekly Ranking</p>
-                    <div>
-                        <StackedBarChart />
-                        <p>islam</p>
-                    </div>
-                    <p className="text-brand font-semibold text-xl">Tailoring</p>
-                </footer> */}
+                </div>
             </div>
         </div>
     );
