@@ -48,7 +48,7 @@ const AdmissionStatus = () => {
           className='p-4 rounded w-full text-brand border-none bg-slate-100 placeholder:text-brand shadow"'
         >
          <option value="" disabled>
-              Desired Program
+            Program
             </option>
             <option value="tailoring">Tailoring</option>
             <option value="Mechanic">Mechanic</option>

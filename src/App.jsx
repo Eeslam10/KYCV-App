@@ -7,7 +7,7 @@ import FormTwo from './pages/FormTwo';
 import FormThree from './pages/FormThree';
 import FormFour from './pages/FormFour';
 import Home from './pages/Home';
-import Profile from './pages/profile';
+import Profile from './pages/Profile';
 import Education from './pages/Education';
 import Settings from './pages/Settings';
 import PersonalDetails from './pages/PersonalDetails';
