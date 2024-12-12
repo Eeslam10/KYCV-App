@@ -78,7 +78,7 @@ const Home = () => {
 
     return (
         <div className="relative">
-            <header className="flex justify-between p-4">
+            <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md flex justify-between p-4">
 
                 <img
                     src={Menu}
