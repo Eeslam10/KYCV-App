@@ -12,14 +12,13 @@ import Education from './pages/Education';
 import Settings from './pages/Settings';
 import PersonalDetails from './pages/PersonalDetails';
 import CourseRegForm from './pages/CourseRegForm';
-import Notification from './pages/Nofitication';
+// import Notification from '../pages/Notification';
 import AdmissionStatus from './pages/AdmissionStatus';
 import ApplicationReview from './pages/ApplicationReview';
 import ApplicationResult from './pages/ApplicationResult';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    // Retrieve saved mode from localStorage
     const savedMode = localStorage.getItem('darkMode');
     return savedMode === 'true';
   });
@@ -46,7 +45,7 @@ const App = () => {
       <h1 className='hidden md:flex mt-6 justify-center text-red-700 font-bold text-4xl'>
         Please Open it in Mobile View
       </h1>
-      <div className={`md:hidden ${darkMode ? 'dark' : ''}`}>
+      <div className="md:hidden bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen">
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/verification' element={<Verification />} />
@@ -61,7 +60,7 @@ const App = () => {
             path='/settings'
             element={<Settings toggleDarkMode={toggleDarkMode} darkMode={darkMode} />}
           />
-          <Route path='/notification' element={<Notification />} />
+          {/* <Route path='/notification' element={<Notification />} /> */}
           <Route path='/personalDetails' element={<PersonalDetails />} />
           <Route path='/courseRegForm' element={<CourseRegForm />} />
           <Route path='/admissionStatus' element={<AdmissionStatus />} />
